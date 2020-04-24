@@ -14,4 +14,13 @@
     .top-wrapper h1 {
         font-size: 28px;
     }
+    /* content */
+    .co-leader {
+        flex-direction: column;
+    }
+    .column-co-leader {
+        display: flex;
+        justify-content: column;
+        overflow: unset;
+    }
 }
