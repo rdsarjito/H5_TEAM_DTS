@@ -1,0 +1,17 @@
+/* Smartphone */
+@media all and (max-width: 670px) {
+    /* header */
+    .header-left {
+        margin: 0 auto;
+    }
+    .header-right {
+        display: none;
+    }
+    /* banner */
+    .top-wrapper {
+        padding: 100px 0 0 20px;
+    }
+    .top-wrapper h1 {
+        font-size: 28px;
+    }
+}
