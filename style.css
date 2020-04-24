@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+}  
+  
+a {
+    text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.content img {
+  width: 50%;
+}
+
+.content .text {
+  width: 50%;
+  padding: 30px;
+}
+
+.btn {
+    padding: 12px 24px;            
+    color: white;            
+    display: inline-block;            
+    opacity: 0.8;            
+    border-radius: 4px;
+    background-color: #15d61f;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+.btn:hover {            
+    background-color: #3e8e41;
+    color: white; 
+  }
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* footer */
+
+.footer{
+	height: 130px;
+	width:100%; 
+	background-color: black;
+	color: white;
+}
+
+.konten{
+	float: left;
+	width: 33.3333%
+}
+
+.konten h1{
+	
+}
+
+.text-footer{
+	font-weight: normal;
+	font-size: 18px;
+	text-align: right;
+	line-height: 5px
+}
+
+.coppyright{
+	padding-top: 80px;
+	font-size: 13px;
+	text-align: center;
+	
+}
+
+/* header */
+.top-wrapper {
+  padding: 180px 0 300px 0;
+  background-image: url(img/1.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  /* background-color:#233452; */
+  background-color: rgba(35, 52, 82, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 1px;
+  height: 50px;
+  /* padding: ; */
+}
+
+.header-left {
+  float: left;
+  padding: 10px 10px 10px 10px;
+}
+
+.header-right, .header-right2, .header-right3 {
+  float: right;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  transition: all 0.5s;
+}
+
+.header-right ul, .header-right2 ul, .header-right3 ul{
+  margin-top: 10px;
+  padding: 10px 10px 17px 10px;
+}
+
+.header-right a, .header-right2 a, .header-right3 a{
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  color: white;
+}
+
+.header-right:hover, .header-right2:hover, .header-right3:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
