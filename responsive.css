@@ -23,4 +23,53 @@
         justify-content: column;
         overflow: unset;
     }
+    /* content 2 */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .css-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content .text {
+        width: 100%;
+        padding: 0;
+    }
+    /* contact */
+    .contact-form {
+        margin: 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form-input {
+        width: 100%;
+        padding: 0;
+    }
+    .contact-form-info {
+        width: 100%;
+        padding: 0;
+      }
+}
+
+/* Tablet */
+@media all and (max-width: 1000px) {
+    /* header */
+    .header-right li {
+        width: 137px;
+        padding: 20px;
+    }
+
+    /* content */
+    .co-leader {
+        flex-direction: column;
+    }
+    .column-co-leader {
+        display: flex;
+        justify-content: column;
+    } 
 }

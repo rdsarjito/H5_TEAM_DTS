@@ -88,7 +88,7 @@ header {
 
 /* content x1 */
 .profiles {
-  margin: 0 10px;
+  margin: 0 25px;
 }
 .profile {
   align-items: center;
@@ -107,8 +107,9 @@ header {
   position: relative;
 }
 
-.rama {
-  background-image: url(./img/rama.jpeg);
+.circle-avatar img {
+  width: 270px;
+  height: 300px;
 }
 
 .nama-profile {
@@ -131,8 +132,6 @@ header {
   padding: 20px;
   font-size: 40px;
 }
-
-
 
 .title-co-leader {
   padding: 50px 10px 0;
@@ -163,7 +162,7 @@ header {
 .content {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 40px 45px;
 }
 
 .content img {
@@ -171,8 +170,12 @@ header {
 }
 
 .content .text {
+  font-family: sans-serif;
   width: 50%;
   padding: 30px;
+}
+.content .text h1, p {
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -216,6 +219,61 @@ header {
   right: 0;
 }
 
+/* Contact */
+.contact-form {
+  margin: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form-input {
+  width: 50%;
+  padding-right: 20px;
+}
+.contact-form-info {
+  width: 50%;
+  padding-left: 20px;
+}
+.contact-form-info h1 {
+  font-family: sans-serif;
+  color: #2f00a6;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  font-family: sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #eeeeee;
+  border: 0;
+}
+.submit-input {
+  font-size: 18px;
+  color: white;
+  background-color: #2f00a6;
+}
+
+.contact-form-pesan {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-pesan span {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  background-color: #15d61f;
+}
+
 .footer-logo {
   display: flex;
   justify-content: center;
@@ -228,6 +286,27 @@ footer img {
 
 .footer-border {
   margin: 0 auto;
-  width: 80%;
-  border-bottom: 2px solid black;
+  width: 90%;
+  border-bottom: 2px solid white;
+}
+
+.media-sosial {
+  padding: 30px 0 15px 0;
+  text-align: center;
+}
+
+.btn-media-sosial {
+  background-color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.btn-media-sosial:hover {
+  color: pink;
+}
+
+.copyright {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
 }
