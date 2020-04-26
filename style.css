@@ -33,6 +33,7 @@ nav{
   padding: 0 80px;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav img {
   width: 300px;
@@ -50,11 +51,31 @@ nav ul li a{
   padding: 31px 30px;
   text-transform: uppercase;
   transition: .5s;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  background: red;
+  display: block;
+  border-radius: 1px;
+  height: 3px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
 }
 nav ul li a:hover{
   background-color: #d5d3da;
-  transition: .5s;
 }
+
+nav ul li a:hover::after{
+  background: red;
+  transform: scaleX(1);
+}
+
 .checkbtn{
   font-size: 30px;
   color: black;
@@ -95,6 +116,7 @@ nav ul li a:hover{
 
 /* content x1 */
 .profiles {
+  color: #28538f;
   padding-top: 80px;
   margin: -80px 25px;
 }
@@ -172,6 +194,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: space-between;
   margin: 30px 45px;
+  color: #28538f;
 }
 .text-special {
   padding-top: 80px;
@@ -247,7 +270,7 @@ nav ul li a:hover{
 }
 .contact-form-info h1 {
   font-family: sans-serif;
-  color: #2f00a6;
+  color: #28538f;
   margin-bottom: 30px;
 }
 
@@ -264,7 +287,7 @@ nav ul li a:hover{
   width: 30%;
   font-size: 18px;
   color: white;
-  background-color: #2f00a6;
+  background-color: #28538f;
 }
 
 .contact-form-pesan {
@@ -305,7 +328,7 @@ footer img {
 }
 
 .media-sosial {
-  background-color: #2f00a6;
+  background-color: #28538f;
   padding: 30px 0 15px 0;
   text-align: center;
 }
@@ -321,7 +344,7 @@ footer img {
 }
 
 .copyright {
-  background-color: #2f00a6;
+  background-color: #28538f;
   font-family: sans-serif;
   text-align: center;
   color: white;
