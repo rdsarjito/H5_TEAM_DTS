@@ -10,38 +10,32 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="header-wrapper">
-        <div class="header-left">
-          <img src="./img/logo.PNG" alt="">
-        </div>
-        <div class="header-right">
-          <li>
-            Profile
-          </li>
-          <li>
-            Penjelasan
-          </li>
-          <li>
-            Contact 
-          </li>
-        </div>
-      </div>
-    </header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <img src="./img/logo.PNG" alt="">
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#penjelasan">Penjelasan</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <!-- Banner -->
     <div class="top-wrapper">
       <h1>A <span class="special">better team</span></h1>
       <h1>Information Technology</h1>
-      <a href="" class="btn contact">
+      <a href="#contact" class="btn contact">
         Contact Us
       </a>
     </div>
 
     <!-- Conten x1 -->
-    <div class="profiles">
+    <div class="profiles" id="profile">
       <div class="title-profile">
-        <h1>Team Leader</h1>
+        <h1 class="h1-special">Team Leader</h1>
       </div>
       <div class="profile">
         <div class="circle-avatar">
@@ -109,10 +103,10 @@
     </div>
 
     <!-- Content x2 -->
-    <div class="content">
-      <img src="./img/html.png">
+    <div class="content" id="penjelasan">
+      <img src="./img/html.png" class="text-special">
       <div class="text">
-        <h1>HTML</h1>
+        <h1 class="text-special">HTML</h1>
         <p>Hypertext Markup Language (HTML) adalah sebuah bahasa markah yang digunakan untuk membuat sebuah halaman web, menampilkan berbagai informasi di dalam sebuah penjelajah web Internet dan pemformatan hiperteks sederhana yang ditulis dalam berkas format ASCII agar dapat menghasilkan tampilan wujud yang terintegrasi. </p>
         <p>Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di CERN (Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet. Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya sejak 1990 dia mendaftar "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia.</p>
         <a href="#" class="btn"><span>Baca Selengkapnya </span></a>
@@ -122,46 +116,38 @@
       <div class="text">
         <h1>CSS</h1>
         <p>Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman. Pada umumnya CSS dipakai untuk memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML</p>
-        <p>CSS dapat mengendalikan ukuran gambar, warna bagian tubuh pada teks, warna tabel, ukuran border, warna border, warna hyperlink, warna mouse over, spasi antar paragraf, spasi antar teks, margin kiri, kanan, atas, bawah, dan parameter lainnya. CSS adalah bahasa style sheet yang digunakan untuk mengatur tampilan dokumen.[2] Dengan adanya CSS memungkinkan kita untuk menampilkan halaman yang sama dengan format yang berbeda.</p>
+        <p>CSS dapat mengendalikan ukuran gambar, warna bagian tubuh pada teks, warna tabel, ukuran border, warna border, warna hyperlink, warna mouse over, spasi antar paragraf, spasi antar teks, margin kiri, kanan, atas, bawah, dan parameter lainnya. CSS adalah bahasa style sheet yang digunakan untuk mengatur tampilan dokumen. Dengan adanya CSS memungkinkan kita untuk menampilkan halaman yang sama dengan format yang berbeda.</p>
         <a href="#" class="btn"><span>Baca Selengkapnya </span></a>
       </div>
       <img src="./img/css.jpg">
     </div>
 
-
-
-
     <!-- Contact -->
-    <div class="contact-form">
+    <div class="contact-form" id="contact">
       <div class="contact-form-input">
-        <input type="text" id="" value="" placeholder="Your Name" />
-        <input type="text" id="" value="" placeholder="Your phone number" />
-        <input type="text" id="" value="" placeholder="Your Email" />
-        <textarea id="" rows="4" placeholder="Massage"></textarea>
-        <input type="submit" name="Kirim" id="" value="Submit" class="submit-input"/>
+        <input type="text" id="" value="" placeholder="Your Name" class="contact-input" />
+        <input type="text" id="" value="" placeholder="Your phone number" class="contact-input" />
+        <input type="text" id="" value="" placeholder="Your Email" class="contact-input" />
+        <textarea id="" rows="4" placeholder="Massage" class="contact-input"></textarea>
+        <input type="submit" name="Kirim" id="" value="Submit" class="submit-input contact-input"/>
       </div>
       <div class="contact-form-info">
         <h1>Contact Us</h1>
         <div class="contact-form-pesan">
           <span class="fa fa-phone">+62 21 123 4567</span>
           <span class="fa fa-envelope">info@teamh5.com</span>
+          <a href="#">
+            <img src="./img/download.jpeg" alt="">
+          </a>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer>
       <div class="footer-logo">
         <img src="./img/logo.PNG" alt="">
       </div>
-      <div class="footer-border"></div>
       <div class="media-sosial">
         <a href="#" class="btn-media-sosial facebook"><span class="fa fa-facebook"></span></a>
         <a href="#" class="btn-media-sosial twitter"><span class="fa fa-twitter"></span></a>
@@ -171,6 +157,5 @@
         &copy; 2020 Tim H-5. All Right Reserved
       </div>
     </footer>
-
   </body>
 </html>

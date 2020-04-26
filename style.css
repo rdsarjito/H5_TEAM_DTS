@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -5,62 +9,64 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }  
   
 a {
     text-decoration: none;
+    color: black;
 }
 
 li {
   list-style: none;
 }
 
-h1 {
+h1, h2, p, ul {
   margin: 0;
-}
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
+  padding: 0;
 }
 /* header */
-header {
-  /* position: fixed; */
+nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
+  position: fixed;
+  z-index: 10;
 }
-.header-wrapper {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 100px;
-  height: 67px;
+nav img {
+  width: 300px;
 }
-
-.header-left img {
-  width: 150px;
-  height: 67px;
+nav ul{
+  float: right;
 }
-
-.header-right li{
-  float: left;
-  width: 150px;
-  height: 67px;
-  text-align: center;
-  padding: 23px;
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 31px 30px;
   text-transform: uppercase;
-  font-size: 1rem;
-  font-family: sans-serif;
+  transition: .5s;
 }
-
-.header-right li:hover {
+nav ul li a:hover{
   background-color: #d5d3da;
-  transition: all 1s;
-  width: 150px;
-  height: 67px;
+  transition: .5s;
 }
-
-
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
 /* top wrapper */
 .top-wrapper {
@@ -70,8 +76,9 @@ header {
   background-image: url(./img/banner);
   background-size: cover;
   width: 100%;
-  height: 580px;
+  height: 650px;
   margin-bottom: 20px;
+  transition: 1.5s;
 }
 
 .top-wrapper h1 {
@@ -88,7 +95,8 @@ header {
 
 /* content x1 */
 .profiles {
-  margin: 0 25px;
+  padding-top: 80px;
+  margin: -80px 25px;
 }
 .profile {
   align-items: center;
@@ -105,6 +113,13 @@ header {
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
+  transition: 0.5s;
+}
+
+.circle-avatar:hover {
+  width: 270px;
+  height: 353px;
+  transition: 0.5s;
 }
 
 .circle-avatar img {
@@ -152,17 +167,14 @@ header {
   overflow: hidden;
 }
 
-
-
-
-
-
-
 /* content x2 */
 .content {
   display: flex;
   justify-content: space-between;
-  margin: 40px 45px;
+  margin: 30px 45px;
+}
+.text-special {
+  padding-top: 80px;
 }
 
 .content img {
@@ -179,20 +191,20 @@ header {
 }
 
 .btn {
-    padding: 12px 24px;            
-    color: white;            
-    display: inline-block;            
-    opacity: 0.8;            
-    border-radius: 4px;
-    background-color: #15d61f;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
+  padding: 12px 24px;            
+  color: white;            
+  display: inline-block;            
+  opacity: 0.8;            
+  border-radius: 4px;
+  background-color: #15d61f;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
 .btn:hover {            
-    background-color: #3e8e41;
-    color: white; 
-  }
+  background-color: #3e8e41;
+  color: white; 
+}
 
 .btn span {
   cursor: pointer;
@@ -239,7 +251,7 @@ header {
   margin-bottom: 30px;
 }
 
-input, textarea {
+.contact-input {
   font-family: sans-serif;
   width: 100%;
   margin-bottom: 10px;
@@ -249,6 +261,7 @@ input, textarea {
   border: 0;
 }
 .submit-input {
+  width: 30%;
   font-size: 18px;
   color: white;
   background-color: #2f00a6;
@@ -261,7 +274,9 @@ input, textarea {
 .contact-form-pesan span {
   margin-bottom: 10px;
 }
-
+.contact-form-pesan a {
+  width: 200px;
+}
 
 
 
@@ -271,7 +286,7 @@ input, textarea {
 
 /* footer */
 footer {
-  background-color: #15d61f;
+  background-color: white;
 }
 
 .footer-logo {
@@ -280,8 +295,7 @@ footer {
 }
 
 footer img {
-  width: 20%;
-  height: 50px;
+  width: 300px;
 }
 
 .footer-border {
@@ -291,6 +305,7 @@ footer img {
 }
 
 .media-sosial {
+  background-color: #2f00a6;
   padding: 30px 0 15px 0;
   text-align: center;
 }
@@ -306,6 +321,7 @@ footer img {
 }
 
 .copyright {
+  background-color: #2f00a6;
   font-family: sans-serif;
   text-align: center;
   color: white;
