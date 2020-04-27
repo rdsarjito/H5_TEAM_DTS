@@ -52,6 +52,7 @@ nav ul li a{
   text-transform: uppercase;
   transition: .5s;
   position: relative;
+  margin-right: -4px;
 }
 nav ul li a::after {
   content: "";
@@ -127,7 +128,6 @@ nav ul li a:hover::after{
 }
 
 .circle-avatar {
-  border: 2px solid black;
   border-radius: 8px;
   width: 270px;
   height: 300px;
@@ -140,8 +140,9 @@ nav ul li a:hover::after{
 
 .circle-avatar:hover {
   width: 270px;
-  height: 353px;
+  height: 350px;
   transition: 0.5s;
+  background-color: #6610f2;
 }
 
 .circle-avatar img {
@@ -151,7 +152,7 @@ nav ul li a:hover::after{
 
 .nama-profile {
   color: white;
-  background-color: rgba(9, 56, 92, 0.8);
+  background-color: rgba(9, 56, 92, 0.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -273,7 +274,9 @@ nav ul li a:hover::after{
   color: #28538f;
   margin-bottom: 30px;
 }
-
+.contact-form-info a img {
+  cursor: pointer;
+}
 .contact-input {
   font-family: sans-serif;
   width: 100%;
@@ -288,6 +291,7 @@ nav ul li a:hover::after{
   font-size: 18px;
   color: white;
   background-color: #28538f;
+  cursor: pointer;
 }
 
 .contact-form-pesan {
@@ -329,18 +333,28 @@ footer img {
 
 .media-sosial {
   background-color: #28538f;
-  padding: 30px 0 15px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.btn-media-sosial {
+.media-sosial div {
   background-color: white;
-  padding: 12px;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  margin: 30px 5px 10px 5px;
 }
 
-.btn-media-sosial:hover {
-  color: pink;
+.media-sosial div span {
+  margin: auto;
+  font-size: 14px;
+  color: #28538f;
+}
+
+.media-sosial div span:hover {
+  color: red;
 }
 
 .copyright {
